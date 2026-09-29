@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ago Hotel | Confort &amp; Hospitalidad Culiacán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+  "colors": {
+    "on-secondary": "#ffffff",
+    "secondary-fixed": "#ffd9dd",
+    "secondary-fixed-dim": "#ffb2bc",
+    "on-primary-container": "#fdfcff",
+    "surface-dim": "#d2d9f4",
+    "surface-tint": "#0091da",
+    "on-tertiary-fixed": "#00164e",
+    "outline": "#6f7882",
+    "on-secondary-container": "#74142e",
+    "inverse-surface": "#283044",
+    "on-secondary-fixed-variant": "#842039",
+    "error": "#ba1a1a",
+    "on-secondary-fixed": "#400013",
+    "on-tertiary": "#ffffff",
+    "surface-container-highest": "#e2e8f0",
+    "inverse-primary": "#93ccff",
+    "surface-container-lowest": "#ffffff",
+    "on-background": "#0f172a",
+    "surface": "#f8fafc",
+    "background": "#f8fafc",
+    "primary-container": "#0284c7",
+    "on-tertiary-fixed-variant": "#264191",
+    "on-surface": "#0f172a",
+    "primary-fixed-dim": "#93ccff",
+    "surface-bright": "#ffffff",
+    "secondary-container": "#e0f2fe",
+    "on-error-container": "#93000a",
+    "secondary": "#831843",
+    "primary-fixed": "#cce5ff",
+    "on-primary": "#ffffff",
+    "outline-variant": "#cbd5e1",
+    "on-error": "#ffffff",
+    "on-surface-variant": "#475569",
+    "surface-container-low": "#f1f5f9",
+    "tertiary-fixed": "#dce1ff",
+    "surface-container-high": "#e2e8f0",
+    "on-primary-fixed-variant": "#004b73",
+    "error-container": "#ffdad6",
+    "tertiary-fixed-dim": "#b6c4ff",
+    "on-primary-fixed": "#001d31",
+    "surface-container": "#f8fafc",
+    "inverse-on-surface": "#f1f5f9",
+    "surface-variant": "#e2e8f0",
+    "tertiary-container": "#5870c3",
+    "tertiary": "#0284c7",
+    "on-tertiary-container": "#fffbff",
+    "primary": "#0091da",
+    "whatsapp": "#25D366",
+    "m-on-secondary": "#ffffff",
+    "m-secondary-fixed": "#ffd9dd",
+    "m-secondary-fixed-dim": "#ffb2bc",
+    "m-on-primary-container": "#fdfcff",
+    "m-surface-dim": "#d2d9f4",
+    "m-surface-tint": "#006397",
+    "m-on-tertiary-fixed": "#00164e",
+    "m-outline": "#6f7882",
+    "m-on-secondary-container": "#74142e",
+    "m-inverse-surface": "#283044",
+    "m-on-secondary-fixed-variant": "#842039",
+    "m-error": "#ba1a1a",
+    "m-on-secondary-fixed": "#400013",
+    "m-on-tertiary": "#ffffff",
+    "m-surface-container-highest": "#dae2fd",
+    "m-inverse-primary": "#93ccff",
+    "m-surface-container-lowest": "#ffffff",
+    "m-on-background": "#131b2e",
+    "m-surface": "#faf8ff",
+    "m-background": "#faf8ff",
+    "m-primary-container": "#007bb9",
+    "m-on-tertiary-fixed-variant": "#264191",
+    "m-on-surface": "#131b2e",
+    "m-primary-fixed-dim": "#93ccff",
+    "m-surface-bright": "#faf8ff",
+    "m-secondary-container": "#fd7e94",
+    "m-on-error-container": "#93000a",
+    "m-secondary": "#a3394f",
+    "m-primary-fixed": "#cce5ff",
+    "m-on-primary": "#ffffff",
+    "m-outline-variant": "#bfc7d2",
+    "m-on-error": "#ffffff",
+    "m-on-surface-variant": "#3f4851",
+    "m-surface-container-low": "#f2f3ff",
+    "m-tertiary-fixed": "#dce1ff",
+    "m-surface-container-high": "#e2e7ff",
+    "m-on-primary-fixed-variant": "#004b73",
+    "m-error-container": "#ffdad6",
+    "m-tertiary-fixed-dim": "#b6c4ff",
+    "m-on-primary-fixed": "#001d31",
+    "m-surface-container": "#eaedff",
+    "m-inverse-on-surface": "#eef0ff",
+    "m-surface-variant": "#dae2fd",
+    "m-tertiary-container": "#5870c3",
+    "m-tertiary": "#3e57a8",
+    "m-on-tertiary-container": "#fffbff",
+    "m-primary": "#0091da"
+  },
+  "borderRadius": {
+    "DEFAULT": "0.25rem",
+    "lg": "0.5rem",
+    "xl": "0.75rem",
+    "full": "9999px",
+    "2xl": "1rem"
+  },
+  "spacing": {
+    "margin-mobile": "1rem",
+    "space-xs": "0.25rem",
+    "space-xl": "2.5rem",
+    "gutter": "1.5rem",
+    "gutter-mobile": "1rem",
+    "space-sm": "0.5rem",
+    "space-md": "1rem",
+    "space-lg": "1.5rem",
+    "margin": "2rem"
+  },
+  "fontFamily": {
+    "label-lg": [
+      "Plus Jakarta Sans"
+    ],
+    "body-sm": [
+      "Plus Jakarta Sans"
+    ],
+    "body-md": [
+      "Plus Jakarta Sans"
+    ],
+    "headline-lg": [
+      "Plus Jakarta Sans"
+    ],
+    "display-mobile": [
+      "Plus Jakarta Sans"
+    ],
+    "headline-sm": [
+      "Plus Jakarta Sans"
+    ],
+    "label-sm": [
+      "Plus Jakarta Sans"
+    ],
+    "headline-lg-mobile": [
+      "Plus Jakarta Sans"
+    ],
+    "headline-md": [
+      "Plus Jakarta Sans"
+    ],
+    "display": [
+      "Plus Jakarta Sans"
+    ],
+    "label-md": [
+      "Plus Jakarta Sans"
+    ],
+    "body-lg": [
+      "Plus Jakarta Sans"
+    ],
+    "eyebrow": [
+      "Plus Jakarta Sans"
+    ],
+    "body": [
+      "Plus Jakarta Sans",
+      "sans-serif"
+    ]
+  },
+  "fontSize": {
+    "m-label-lg": [
+      "14px",
+      {
+        "lineHeight": "20px",
+        "letterSpacing": "0.01em",
+        "fontWeight": "600"
+      }
+    ],
+    "m-body-sm": [
+      "14px",
+      {
+        "lineHeight": "20px",
+        "fontWeight": "400"
+      }
+    ],
+    "m-body-md": [
+      "16px",
+      {
+        "lineHeight": "24px",
+        "fontWeight": "400"
+      }
+    ],
+    "m-headline-lg": [
+      "32px",
+      {
+        "lineHeight": "40px",
+        "letterSpacing": "-0.01em",
+        "fontWeight": "700"
+      }
+    ],
+    "m-display-mobile": [
+      "36px",
+      {
+        "lineHeight": "44px",
+        "letterSpacing": "-0.02em",
+        "fontWeight": "800"
+      }
+    ],
+    "m-headline-sm": [
+      "20px",
+      {
+        "lineHeight": "28px",
+        "fontWeight": "600"
+      }
+    ],
+    "m-label-sm": [
+      "11px",
+      {
+        "lineHeight": "14px",
+        "letterSpacing": "0.04em",
+        "fontWeight": "500"
+      }
+    ],
+    "m-headline-lg-mobile": [
+      "26px",
+      {
+        "lineHeight": "34px",
+        "letterSpacing": "-0.01em",
+        "fontWeight": "700"
+      }
+    ],
+    "m-headline-md": [
+      "24px",
+      {
+        "lineHeight": "32px",
+        "fontWeight": "600"
+      }
+    ],
+    "m-display": [
+      "48px",
+      {
+        "lineHeight": "56px",
+        "letterSpacing": "-0.02em",
+        "fontWeight": "800"
+      }
+    ],
+    "m-label-md": [
+      "12px",
+      {
+        "lineHeight": "16px",
+        "letterSpacing": "0.02em",
+        "fontWeight": "600"
+      }
+    ],
+    "m-body-lg": [
+      "18px",
+      {
+        "lineHeight": "28px",
+        "fontWeight": "400"
+      }
+    ],
+    "m-eyebrow": [
+      "12px",
+      {
+        "lineHeight": "16px",
+        "letterSpacing": "0.14em",
+        "fontWeight": "700"
+      }
+    ]
+  }
+}
+    }
+  };
+</script>
+<style>
+  @layer base {
+    html, body { margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+    body { overscroll-behavior: none; }
+    .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+    .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+    main > :first-child { margin-top: 0 !important; }
+    main > :last-child { margin-bottom: 0 !important; }
+  }
+  ::-webkit-scrollbar { display: none; }
+
+  #desktop-view { display: none; }
+  #mobile-view { display: block; }
+  @media (min-width: 768px) {
+    #desktop-view { display: block; }
+    #mobile-view { display: none; }
+  }
+</style>
+</head>
+<body>
+<div id="desktop-view" class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-outline-variant/40 shadow-sm"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center" data-path="inicio" href="#"><img alt="Ago Hotel Logo Oficial" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UGq6rHb4bcFh4eIqILKcnYCRXbBH4ziTIHneMug2Zvjg-xVn4g_9F7XRkt7P2iTjfNATBICSh9P2EBGtUp0fhSU8UVKJTrDDZHqQOhCKWN5JKAIucsbNK3Ejf9Xut2xYs29RTqIef0SMduL4Xl9EAH5niw-zbb76MwJVIwnyGFmv2Wb8iZuq3bRyuBPkQGTdMH9v7sC8tJXKnJokWwfbOl9S5OCHBgkkOEpYQ4tln0XH_vOINboKib5qi3"></a><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low border border-outline-variant/60 px-space-sm py-1 rounded-full"><span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label-md text-label-md text-on-surface font-bold">4.9</span><span class="font-body-sm text-body-sm text-on-surface-variant">(14 reseñas en Google)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-1" data-active-classes="bg-primary/10 text-primary font-bold rounded-lg"><a aria-current="page" class="px-space-sm py-1.5 transition-all bg-primary/10 text-primary font-bold rounded-lg" data-path="inicio" href="#">Inicio</a><a class="px-space-sm py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all" data-path="sobre-nosotros" href="#sobre-nosotros">Sobre Nosotros</a><a class="px-space-sm py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all" data-path="galeria" href="#galeria">Galería</a><a class="px-space-sm py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all" data-path="resenas" href="#resenas">Reseñas</a><a class="px-space-sm py-1.5 font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-all" data-path="ubicacion" href="#ubicacion">Ubicación</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center h-11 px-space-md rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white font-label-lg text-label-lg shadow-sm transition-all duration-200 hover:scale-[1.02]" href="https://wa.me/526673599545" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[19px] mr-space-xs">chat</span><span class="">Reservar por WhatsApp</span></a><div class="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-[20px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION WITH REAL AGO HOTEL FACADE -->
+<section class="relative w-full -mt-20 overflow-hidden">
+<div class="relative w-full min-h-[92vh] flex items-end pb-space-xl lg:pb-24 pt-36 px-margin-mobile lg:px-margin bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida/AEtjO1XHTowKD3cA2jFUxL_zFaUg0J2-dmW7PLu7fhDBP3Z2PsJJv2qD0wzINZ4msWWNm0mrmbH5PTA_BydNE7Vo1c4OJL6bOWNPuyx0BeODtaA_3dwFOgUBz-nS8z_ayhWw0k1tEEQ6pS-KVIgMRWYGpJ6ZIKv8bXgw9GgtFec0RKm-1XgYZKHImh9D0HSmMAGx96SRBwbIx-qbiI2XGlprepQIpc3V0CrZxw88PUoRObw-QU8RqD36yUvXWsha&quot;);">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/50 to-slate-900/20"></div>
+<div class="relative z-10 max-w-[1360px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+<div class="lg:col-span-8 space-y-space-md">
+<div class="inline-flex items-center gap-space-xs bg-white/95 backdrop-blur-md px-space-md py-1.5 rounded-full shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.9</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">· 14 reseñas en Google</span>
+</div>
+<h1 class="font-headline-lg lg:text-[48px] lg:leading-[56px] text-white text-balance tracking-tight font-extrabold drop-shadow-md max-w-3xl">
+            Un refugio de calma y hospitalidad en Culiacán
+          </h1>
+<p class="font-body-lg text-body-lg text-slate-100 max-w-xl text-pretty leading-relaxed">
+            Una atmósfera pacífica, acogedora y serena concebida para el descanso absoluto de cada huésped.
+          </p>
+<div class="pt-space-xs flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center justify-center h-14 px-space-lg rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white font-label-lg text-label-lg shadow-lg font-bold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" href="https://wa.me/526673599545" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] mr-space-xs">chat</span>
+<span class="">Reservar por WhatsApp</span>
+</a>
+<div class="inline-flex items-center gap-space-xs px-space-md py-3.5 rounded-lg bg-white/95 backdrop-blur-md text-slate-900 shadow-md">
+<span class="material-symbols-outlined text-primary text-[20px]">view_in_ar</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">Próximamente: Recorrido Virtual 3D interactivo</span>
+</div>
+</div>
+</div>
+<div class="hidden lg:flex lg:col-span-4 justify-end">
+<div class="bg-white/95 backdrop-blur-md p-space-md rounded-xl shadow-xl max-w-xs space-y-space-xs border border-white/40">
+<span class="font-eyebrow text-[11px] text-primary font-bold uppercase tracking-widest block">Destino Aguaruto</span>
+<p class="font-headline-sm text-headline-sm text-slate-900 font-bold leading-tight">Paz, confort y atención personalizada.</p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">bed</span>
+<span class="">Descanso Premium Garantizado</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. SOBRE NOSOTROS -->
+<section class="w-full py-16 lg:py-24 bg-white" id="sobre-nosotros">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-4">
+<span class="font-eyebrow text-[12px] text-primary uppercase font-bold tracking-widest block mb-space-xs">Identidad Hotelera</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold">Sobre Nosotros</h2>
+</div>
+<div class="lg:col-span-8 bg-surface-container-low border border-slate-200/80 p-space-lg lg:p-space-xl rounded-xl shadow-sm">
+<p class="font-headline-md text-headline-md text-slate-800 font-semibold leading-relaxed line-clamp-2">
+            Ago Hotel es un espacio íntimo y apacible concebido para brindar confort excepcional y hospitalidad cálida en el corazón de Aguaruto, Culiacán.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. GALERÍA DE HABITACIONES Y ÁREAS (REAL PHOTOS) -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low" id="galeria">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<span class="font-eyebrow text-[12px] text-primary uppercase font-bold tracking-widest block">Espacios Diseñados para Ti</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold">Galería de Habitaciones y Espacios</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Fotografías reales de nuestras instalaciones en Aguaruto. Confort garantizado, aire acondicionado y la tranquilidad que buscas.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Tarjeta 1: Habitación Queen Bed (REAL PHOTO 3) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col group border border-slate-200/70">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Habitación individual con cama confortable, edredón azul y aire acondicionado en Ago Hotel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNwq4y9Y1hI3a7HiGMySu_6P6Szcx_kIzqvCt4xP8sGYZ6EfGioy2rup9igzKif44Le_GX8AqkeL0ot8OsyEjXlc-cOkzKbf3j8f7tTKYJm5MiQnSPlVFVBNleA_ynbQ9w1MXvgP-RbEp7KFW3jbcV4o0k_i0wwQKov7Y8pxp9kmm-nzN8RHivF4EJTOF-Fe-z9tJ0OjzSALIYCYoWcBVCVec7bKKW5dgevpH3ZaMn_3NOKx3lL3PHJLo9HNjfzJ4LuzQ">
+<div class="absolute top-space-sm left-space-sm bg-primary text-white px-space-sm py-1 rounded-full font-label-md text-label-md font-bold shadow-sm">
+              Confort &amp; Clima
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Habitaciones Confortables</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Diseñadas para un descanso silencioso con camas confortables, lencería de calidad, pantalla TV y un clima fresco y relajante.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">ac_unit</span>
+<span class="">Clima Mini-Split • TV • Wi-Fi Rápido</span>
+</div>
+</div>
+</article>
+<!-- Tarjeta 2: Habitación Doble (REAL PHOTO 6) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col group border border-slate-200/70">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Habitación doble con dos camas cómodas y decoración elegante en Ago Hotel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8PKbE7L-e1DP2lxZv9cHNr2x6W8ErA0wzev_elHUzF08Uci83Mv2brE4O2PF1DbWNVTRvo-9PbFyrocSvZWvkVm464FIR-KUXwf69gSvKQLgairVtJKi0TJSI_c40keNUKqy6Qz2c7P8jrNRSZu2yxH3KR0YxragPAs1m1C0GIdoNkXk6-IWGDmYaFnke_AXL6Slxj-IdbwXOArZHfSU43OIleCq7BXx2eRmuVKIiBLO2Mtu0hNv97TAKzL6g0GpxrHQ">
+<div class="absolute top-space-sm left-space-sm bg-primary text-white px-space-sm py-1 rounded-full font-label-md text-label-md font-bold shadow-sm">
+              Habitación Doble
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Habitaciones Dobles</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Espaciosas y luminosas con dos camas dobles para familias o compañeros de trabajo con absoluta comodidad.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+<span class="">Dos Camas • Espaciosa y Limpia</span>
+</div>
+</div>
+</article>
+<!-- Tarjeta 3: Lobby & Sala Lounge (REAL PHOTO 5) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col group border border-slate-200/70">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Lobby y sala lounge con sofás de piel y ambiente cómodo en Ago Hotel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcmfwC13wf1sUsSoSVueWRj1Ub2I5VAODjW_AFOpMc7NgXg82ZVlOkDM-1012Um5zPaAzJz_pyTK5_5tnXakQnYAh1IikjhhHp_sqyRX39kW_FOK-9T66aATAgr8OJt7ufq-OWD488nApWFWW8IRdThxci3zeYJYQDiMIoCojQrm-9bKAaBIBCX27Kpa01wip1ga3LU2zY2SQwS0r8zW_HhVg-wjEbcimWZfwANpu-JCQXT29FhsPj8yTgz0NSlt-3R1k">
+<div class="absolute top-space-sm left-space-sm bg-primary text-white px-space-sm py-1 rounded-full font-label-md text-label-md font-bold shadow-sm">
+              Lobby &amp; Estar
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lobby &amp; Área de Estar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Acogedora sala de estar climatizada con sofás de piel, ideal para esperar tranquilamente o coordinar tus traslados en Culiacán.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">weekend</span>
+<span class="">Lobby Climatizado • Sala Confortable</span>
+</div>
+</div>
+</article>
+<!-- Tarjeta 4: Suite / Área adicional (REAL PHOTO 2) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col group md:col-span-2 lg:col-span-1 border border-slate-200/70">
+<div class="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+<img alt="Sala con refrigerador y sillón de descanso en Ago Hotel" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMqivUOJnMk1v1zHwuA5NK_NpU6XHLZNBUBEfjHpf-jCMhVdAAaeoumuGG9O8COQOWOHBuJ9sxbcUcf0TnymZUgilV-KP4wNNELqv_be2iFGfPZOLdv03fnNQV0nK9FObpSwb0sRKs6OvNhEWjDrA45srt8dy-ZfAu2dgMzyIACRDj_4iEkyIOConWPZmMunTEeSXQe4LqI_TKrjO6AzEJuHDEkg2nA6v_pqjZLfDb6mpFKpC-oraVzi1ZKqWgJXdr8wY">
+<div class="absolute top-space-sm left-space-sm bg-primary text-white px-space-sm py-1 rounded-full font-label-md text-label-md font-bold shadow-sm">
+              Amenidades
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Comodidades y Descanso</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Áreas equipadas con refrigerador, mesita de estar y mobiliario para una estadía práctica y relajada.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">kitchen</span>
+<span class="">Refrigerador • Sala de descanso</span>
+</div>
+</div>
+</article>
+<!-- Tarjeta 5: Fachada Exterior con Cielo Azul (REAL PHOTO 7) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col group md:col-span-2 lg:col-span-2 border border-slate-200/70">
+<div class="relative aspect-[16/9] w-full overflow-hidden bg-slate-100">
+<img alt="Fachada de Ago Hotel en calle Adolfo López Mateos, Aguaruto, con señalamiento emblemático" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1U1uxI61WAcDzMsHX2GM7eSf8oHdIfEHdVFfTHzTd-qqHU1AiQf2jPmPwl59912SS1qBytNwCIslUJA0JzdASUwb0kvVxpS9vf8iM2i3l9gWMEUb2XxJcKV7soIJqy-bqj1H9QPQ-q6mGYuQvSEF01lXgSneU01MEP2-Z4b9HXsqiQiRSTXoEPZZCKrgKIjlPrRQcPNEQirZ7Q9sWkjyvOO7fCPneYcJt0l9B568s00SyFsnLP5rNmp-JYZ">
+<div class="absolute top-space-sm left-space-sm bg-primary text-white px-space-sm py-1 rounded-full font-label-md text-label-md font-bold shadow-sm">
+              Exterior &amp; Cochera
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-sm">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Fachada e Instalaciones en Aguaruto</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Edificio moderno y seguro sobre calle Adolfo López Mateos 33, con acceso cómodo y cochera techada para la seguridad de tu vehículo.
+              </p>
+</div>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">garage</span>
+<span class="">Cochera segura • Acceso controlado</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Recorrido Virtual 3D Teaser Banner -->
+<div class="bg-white border border-primary/20 p-space-lg lg:p-space-xl rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20">
+<span class="material-symbols-outlined text-[28px]">3d_rotation</span>
+</div>
+<div>
+<span class="font-eyebrow text-[11px] text-primary font-bold uppercase tracking-wider block">Inmersión Tecnológica</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Explora cada rincón con nuestro próximo Recorrido Virtual 3D interactivo</h4>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-container-low hover:bg-primary hover:text-white text-slate-800 transition-all font-label-lg text-label-lg font-bold border border-slate-200" href="https://wa.me/526673599545?text=Hola,%20quisiera%20conocer%20m%C3%A1s%20detalles%20de%20Ago%20Hotel" rel="noopener noreferrer" target="_blank">
+<span class="">Preguntar por amenidades</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. SECCIÓN DE RESEÑAS -->
+<section class="w-full py-20 lg:py-28 bg-white" id="resenas">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs bg-amber-50 text-amber-900 border border-amber-200/80 px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">★ 4.9 basado en 14 reseñas reales en Google</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold">Lo que dicen nuestros huéspedes</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          La satisfacción y tranquilidad de quienes nos eligen en Culiacán reflejada en sus comentarios reales.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
+<!-- Review 1 -->
+<div class="bg-surface-container-low border border-slate-200/80 p-space-xl rounded-xl shadow-sm flex flex-col justify-between space-y-space-lg relative">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-xs text-amber-400">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-slate-800 italic font-medium leading-relaxed">“Excelente servicio y hospitalidad, lo recomiendo ampliamente. Precio accesible, clima agradable y un lugar muy tranquilo.”</p>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-slate-200/60">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Huésped verificado en Google</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calificación 5 estrellas</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low border border-slate-200/80 p-space-xl rounded-xl shadow-sm flex flex-col justify-between space-y-space-lg relative">
+<div class="space-y-space-md">
+<div class="flex items-center gap-space-xs text-amber-400">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-slate-800 italic font-medium leading-relaxed">“Mi estancia fue muy agradable, el servicio fue muy bueno.”</p>
+</div>
+<div class="flex items-center justify-between pt-space-md border-t border-slate-200/60">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Huésped verificado en Google</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calificación 5 estrellas</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. SECCIÓN DE UBICACIÓN -->
+<section class="w-full py-16 lg:py-24 bg-surface-container-low" id="ubicacion">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin space-y-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text & Navigation Actions -->
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-eyebrow text-[12px] text-primary uppercase font-bold tracking-widest block">Acceso Rápido &amp; Entorno</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface font-extrabold">Ubicación Privilegiada</h2>
+<div class="bg-white border border-slate-200/80 p-space-md rounded-xl space-y-space-xs shadow-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0">location_on</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Dirección</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Adolfo López Mateos 33, Aguaruto, Culiacán, Sinaloa</p>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Situado en Aguaruto, Ago Hotel brinda fácil conectividad vial con el poniente de Culiacán, el corredor industrial y el Aeropuerto Internacional, manteniéndose en un vecindario apacible alejado del bullicio urbano.
+          </p>
+<div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span class="">Fácil acceso sobre vialidades principales de Aguaruto</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+<span class="">Cercanía con el Aeropuerto Internacional de Culiacán</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center justify-center h-12 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-white font-label-lg text-label-lg font-bold shadow-sm transition-all duration-200 hover:scale-[1.01]" href="https://maps.google.com/?q=Adolfo+L%C3%B3pez+Mateos+33,+Aguaruto,+Culiac%C3%A1n,+Sinaloa" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] mr-space-xs">near_me</span>
+<span class="">Cómo llegar</span>
+</a>
+</div>
+</div>
+<!-- Styled Map Canvas View -->
+<div class="lg:col-span-7">
+<div class="relative w-full h-[400px] lg:h-[460px] rounded-xl overflow-hidden shadow-md bg-slate-200 border border-slate-300/60">
+<div class="w-full h-full bg-cover bg-center" data-location="Adolfo López Mateos 33, Aguaruto, Culiacán, Sinaloa" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRZ0FQiLrj1REsyAz0qgNhOstWRp7UDTQ5FYutqJiPcOnU6GIb5iVNOFLGkHM9i7bqyiiOegG7sB3hbOM4uw07vfLScNihzjU5aoPkiFy9ITS05cbeNsKyeYXUR7LlLoqH0jpAdcsXOglxgWrW0xV-Xx9SqQlReE8mTGzIJ4hE8FqkTL72TlKnBKoh23g8BHm8l1Abt9k3zUrzFJwySxeQbS3VdIk-MwxAQRiVD2Aft3EcwB-Vv-A_bQ')"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md bg-white/95 backdrop-blur-md p-space-md rounded-xl shadow-lg border border-slate-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md font-bold text-on-surface">Ago Hotel en Aguaruto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adolfo López Mateos 33, Culiacán, Sin.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold hover:underline" href="https://maps.google.com/?q=Adolfo+L%C3%B3pez+Mateos+33,+Aguaruto,+Culiac%C3%A1n,+Sinaloa" rel="noopener noreferrer" target="_blank">
+<span class="">Abrir en Google Maps</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. BLOQUE DE CONTACTO DIRECTO -->
+<section class="w-full py-16 lg:py-24 bg-white">
+<div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-primary text-white rounded-xl p-space-lg lg:p-space-xl shadow-xl overflow-hidden relative">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 space-y-space-sm">
+<span class="font-eyebrow text-[11px] text-white/80 uppercase font-bold tracking-widest block">Atención Inmediata</span>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-white font-extrabold">Contáctanos y Planifica tu Estadía</h2>
+<p class="font-body-md text-body-md text-white/90 max-w-xl">
+              Respondemos con gusto todas tus preguntas sobre habitaciones, recepción y llegada a Aguaruto.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-white text-[24px] shrink-0">call</span>
+<div>
+<p class="font-label-md text-label-md text-white/80 uppercase font-bold tracking-wider">Teléfono directo</p>
+<a class="font-headline-sm text-headline-sm text-white font-extrabold hover:underline block" href="tel:6673599545">667 359 9545</a>
+</div>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-white text-[24px] shrink-0">schedule</span>
+<div>
+<p class="font-label-md text-label-md text-white/80 uppercase font-bold tracking-wider">Horario de recepción</p>
+<p class="font-body-md text-body-md text-white font-semibold">Atención continua los 7 días de la semana</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col items-stretch lg:items-end justify-center gap-space-md">
+<a class="inline-flex items-center justify-center h-14 px-space-lg rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white font-label-lg text-label-lg font-bold shadow-md transition-all duration-200" href="https://wa.me/526673599545?text=Hola,%20deseo%20hacer%20una%20consulta%20para%20hospedarme%20en%20Ago%20Hotel" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px] mr-space-xs">chat</span>
+<span class="">Mensaje directo a WhatsApp</span>
+</a>
+<a class="inline-flex items-center justify-center h-14 px-space-lg rounded-lg bg-white/20 hover:bg-white/30 text-white font-label-lg text-label-lg font-bold backdrop-blur-sm transition-all duration-200 border border-white/30" href="tel:6673599545">
+<span class="material-symbols-outlined text-[20px] mr-space-xs">phone_in_talk</span>
+<span class="">Llamar por Teléfono</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-white border-t border-slate-200/80 mt-space-xl"><div class="max-w-[1360px] mx-auto px-margin-mobile lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-lg"><div class="md:col-span-5 space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="Ago Hotel Logo Oficial" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UGq6rHb4bcFh4eIqILKcnYCRXbBH4ziTIHneMug2Zvjg-xVn4g_9F7XRkt7P2iTjfNATBICSh9P2EBGtUp0fhSU8UVKJTrDDZHqQOhCKWN5JKAIucsbNK3Ejf9Xut2xYs29RTqIef0SMduL4Xl9EAH5niw-zbb76MwJVIwnyGFmv2Wb8iZuq3bRyuBPkQGTdMH9v7sC8tJXKnJokWwfbOl9S5OCHBgkkOEpYQ4tln0XH_vOINboKib5qi3"></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Hospitalidad cálida, habitaciones confortables y atmósfera serena en Aguaruto, Culiacán.</p><div class="inline-flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md font-semibold"><span class="material-symbols-outlined text-[16px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span><span class="">4.9 estrellas • 14 opiniones verificadas en Google</span></div></div><div class="md:col-span-4 space-y-space-xs"><span class="font-eyebrow text-[11px] text-primary uppercase font-bold tracking-widest block">Contacto &amp; Ubicación</span><div class="flex items-start gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">location_on</span><span class="">Adolfo López Mateos 33, Aguaruto, Culiacán, Sinaloa</span></div><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span><a class="hover:text-primary transition-colors font-bold" href="tel:6673599545">667 359 9545</a></div></div><div class="md:col-span-3 space-y-space-xs"><span class="font-eyebrow text-[11px] text-primary uppercase font-bold tracking-widest block">Navegación</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant font-medium"><li class=""><a class="hover:text-primary transition-colors" data-path="inicio" href="#">Inicio</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="sobre-nosotros" href="#sobre-nosotros">Sobre Nosotros</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="galeria" href="#galeria">Galería</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="resenas" href="#resenas">Reseñas de Huéspedes</a></li><li class=""><a class="hover:text-primary transition-colors" data-path="ubicacion" href="#ubicacion">Cómo Llegar</a></li></ul></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-slate-500 border-t border-slate-100"><p class="">© 2024 Ago Hotel. Todos los derechos reservados.</p><p class="font-label-md text-label-md text-slate-400">Aguaruto • Culiacán, Sinaloa</p></div></div></footer>
+</div>
+<div id="mobile-view" class="bg-m-surface font-body text-m-on-surface flex flex-col min-h-screen">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-m-surface-container-high/60 shadow-[0_1px_6px_rgba(0,145,218,0.06)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-2 min-w-0"><img alt="Ago Hotel Logo Oficial" class="h-9 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UGq6rHb4bcFh4eIqILKcnYCRXbBH4ziTIHneMug2Zvjg-xVn4g_9F7XRkt7P2iTjfNATBICSh9P2EBGtUp0fhSU8UVKJTrDDZHqQOhCKWN5JKAIucsbNK3Ejf9Xut2xYs29RTqIef0SMduL4Xl9EAH5niw-zbb76MwJVIwnyGFmv2Wb8iZuq3bRyuBPkQGTdMH9v7sC8tJXKnJokWwfbOl9S5OCHBgkkOEpYQ4tln0XH_vOINboKib5qi3"><div class="flex flex-col min-w-0"><span class="font-eyebrow text-[10px] text-[#0091da] uppercase tracking-wider font-bold">Aguaruto</span><span class="font-label-sm text-[11px] text-m-on-surface-variant flex items-center gap-1 font-semibold whitespace-nowrap"><span class="text-[#E89234]">★</span> 4.9 <span class="opacity-75 font-normal">(14 reseñas)</span></span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Llamar al hotel" class="w-9 h-9 rounded-full bg-m-primary/10 flex items-center justify-center text-m-primary hover:bg-m-primary/20 transition-all active:scale-95" href="tel:6673599545"><span class="material-symbols-outlined text-[19px]">call</span></a><button aria-label="Menu" class="w-9 h-9 flex items-center justify-center rounded-lg text-m-on-surface hover:bg-m-surface-container active:scale-95 transition-all"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-m-surface pb-36"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden px-margin-mobile pt-space-md">
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-m-surface-container border border-m-surface-container-high/40">
+<div class="relative w-full h-[360px]">
+<img alt="Fachada oficial de Ago Hotel con servicios de Clima, TV y Wi-Fi en Aguaruto" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XHTowKD3cA2jFUxL_zFaUg0J2-dmW7PLu7fhDBP3Z2PsJJv2qD0wzINZ4msWWNm0mrmbH5PTA_BydNE7Vo1c4OJL6bOWNPuyx0BeODtaA_3dwFOgUBz-nS8z_ayhWw0k1tEEQ6pS-KVIgMRWYGpJ6ZIKv8bXgw9GgtFec0RKm-1XgYZKHImh9D0HSmMAGx96SRBwbIx-qbiI2XGlprepQIpc3V0CrZxw88PUoRObw-QU8RqD36yUvXWsha">
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent"></div>
+<!-- Social Proof Badge Top -->
+<div class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md shadow-sm border border-slate-100">
+<span class="text-[#E89234] text-[14px] leading-none font-bold">★</span>
+<span class="font-label-md text-slate-900 font-bold">4.9</span>
+<span class="font-label-sm text-slate-600 font-medium">(14 reseñas en Google)</span>
+</div>
+<!-- Hero Bottom Content -->
+<div class="absolute bottom-5 inset-x-5 flex flex-col gap-1 text-white">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="px-2 py-0.5 rounded-md bg-[#0091da] text-white font-eyebrow text-[10px] uppercase font-bold tracking-wider">Hotel Boutique</span>
+<span class="text-xs text-white/80 font-medium">Aguaruto, Sin.</span>
+</div>
+<h1 class="font-headline-lg-mobile text-white leading-tight font-bold">Ago Hotel</h1>
+<p class="font-body-md text-white/90 font-medium text-[15px]">Calma y hospitalidad en Culiacán</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Floating Action / Key Highlights matching painted facade & comfort -->
+<section class="px-margin-mobile mt-space-md">
+<div class="grid grid-cols-5 gap-1.5 p-2.5 bg-m-surface-container-low rounded-xl text-center border border-m-surface-container">
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-white shadow-xs">
+<span class="material-symbols-outlined text-[#0091da] text-[20px]" style="font-variation-settings: 'FILL' 1;">mode_fan</span>
+<span class="font-label-sm text-[11px] text-m-on-surface font-semibold mt-1">Clima A/C</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-white shadow-xs">
+<span class="material-symbols-outlined text-[#0091da] text-[20px]" style="font-variation-settings: 'FILL' 1;">tv</span>
+<span class="font-label-sm text-[11px] text-m-on-surface font-semibold mt-1">TV</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-white shadow-xs">
+<span class="material-symbols-outlined text-[#0091da] text-[20px]" style="font-variation-settings: 'FILL' 1;">wifi</span>
+<span class="font-label-sm text-[11px] text-m-on-surface font-semibold mt-1">Wi-Fi</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-white shadow-xs">
+<span class="material-symbols-outlined text-[#0091da] text-[20px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-sm text-[11px] text-m-on-surface font-semibold mt-1">Calma</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-lg bg-white shadow-xs">
+<span class="material-symbols-outlined text-[#0091da] text-[20px]" style="font-variation-settings: 'FILL' 1;">bed</span>
+<span class="font-label-sm text-[11px] text-m-on-surface font-semibold mt-1">Confort</span>
+</div>
+</div>
+</section>
+<!-- Sobre Nosotros / Nuestra Esencia (Exactly 2 lines) -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="bg-m-surface-container-lowest p-5 rounded-2xl shadow-sm border border-m-surface-container-high/40">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-4 bg-[#0091da] rounded-full"></span>
+<span class="font-eyebrow text-m-eyebrow text-[#0091da] uppercase tracking-widest font-bold">Nuestra Esencia</span>
+</div>
+<p class="font-body-md text-m-on-surface-variant text-[15px] leading-relaxed line-clamp-2">
+        Ago Hotel es un espacio íntimo y apacible concebido para brindar confort excepcional y hospitalidad cálida en el corazón de Aguaruto, Culiacán.
+      </p>
+</div>
+</section>
+<!-- Galería Visual Táctil (Real Photos) -->
+<section class="mt-space-lg">
+<div class="px-margin-mobile flex items-end justify-between mb-3">
+<div>
+<span class="font-eyebrow text-m-eyebrow text-[#0091da] uppercase tracking-wider font-bold">Instalaciones Reales</span>
+<h2 class="font-headline-sm text-m-on-surface font-bold mt-0.5">Galería Visual</h2>
+</div>
+<span class="font-label-sm text-m-on-surface-variant flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">swipe</span> Desliza
+      </span>
+</div>
+<!-- Carrusel Horizontal -->
+<div class="flex gap-3 overflow-x-auto px-margin-mobile pb-2 snap-x snap-mandatory scroll-smooth no-scrollbar"><div class="snap-start shrink-0 w-[270px] bg-m-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-m-surface-container-high/50 flex flex-col"><div class="relative h-44 w-full bg-slate-100"><img alt="Exterior y Cochera de Ago Hotel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1U1uxI61WAcDzMsHX2GM7eSf8oHdIfEHdVFfTHzTd-qqHU1AiQf2jPmPwl59912SS1qBytNwCIslUJA0JzdASUwb0kvVxpS9vf8iM2i3l9gWMEUb2XxJcKV7soIJqy-bqj1H9QPQ-q6mGYuQvSEF01lXgSneU01MEP2-Z4b9HXsqiQiRSTXoEPZZCKrgKIjlPrRQcPNEQirZ7Q9sWkjyvOO7fCPneYcJt0l9B568s00SyFsnLP5rNmp-JYZ"><span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-m-on-surface font-label-md px-2.5 py-1 rounded-full shadow-xs">Exterior</span></div><div class="p-3.5 flex flex-col justify-between flex-1"><span class="font-label-lg text-m-on-surface font-bold">Exterior &amp; Cochera</span><p class="font-body-sm text-m-on-surface-variant mt-1 text-[13px]">Fachada principal renovada con acceso seguro y cocheras techadas para tu vehículo.</p></div></div>
+<!-- Item 1: Habitación Matrimonial Confort -->
+<div class="snap-start shrink-0 w-[270px] bg-m-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-m-surface-container-high/50 flex flex-col">
+<div class="relative h-44 w-full bg-slate-100">
+<img alt="Habitación Matrimonial Confort en Ago Hotel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCryN5ZlVEzmbcaU5ymURH-IXRPkRvEYj7WHPby4om80balRV6RbemjPreIDQo3Yw2085IyPYYnC3Vq1EOxqFwhPcclgL2xejnsEdNGz1OqNlacfMbCnWxH0OZJTqHr4qbIyjbjGrxSBjIXiBTU8lHqmTlJHoMCIvyIFSOJ_tI4zCyHCfDGH5vJMfK-edThz7BOz0s-L1vATPO9pwR5353SWvpPPuyUyiHP8y9wRk1Zj3yhcTsyx1R5Tu7AvpDHeADq6zw">
+<span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-m-on-surface font-label-md px-2.5 py-1 rounded-full shadow-xs">
+            Habitaciones
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<span class="font-label-lg text-m-on-surface font-bold">Habitación Matrimonial Confort</span>
+<p class="font-body-sm text-m-on-surface-variant mt-1 text-[13px]">Cama matrimonial, aire acondicionado mini-split y sábanas frescas para un descanso total.</p>
+</div>
+</div>
+<!-- Item 2: Habitación Doble Climatizada -->
+<div class="snap-start shrink-0 w-[270px] bg-m-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-m-surface-container-high/50 flex flex-col">
+<div class="relative h-44 w-full bg-slate-100">
+<img alt="Habitación Doble Climatizada en Ago Hotel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf9EfmLiljYWdPlUiAQMHE0xvCMos2Ll6Jhfw_HiVMSBmQq7P6kNg3Hmw-WdbByEiKapbQcKKLg9P1fQ5b5lbAPhZd3Yi0cdGc_j97lOpLrQUwgMIrL0GnKAEDR0GOTXdTKmE_4kTfvV0fgNDo7JS7clBS5Di-Tv51vgMLoT1pD4I8Q8f0wmPuKNjZFVY-8RJPamN2umLPNDdyegaNpr04HCf1WY4EYrhDhB969CntgZ3PqPoBXrArxNnzKnyh20hRuXU">
+<span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-m-on-surface font-label-md px-2.5 py-1 rounded-full shadow-xs">
+            Doble
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<span class="font-label-lg text-m-on-surface font-bold">Habitación Doble Climatizada</span>
+<p class="font-body-sm text-m-on-surface-variant mt-1 text-[13px]">Dos camas amplias, toallas suaves, televisión y clima individual ideal para familias.</p>
+</div>
+</div>
+<!-- Item 3: Lobby & Sala de Espera -->
+<div class="snap-start shrink-0 w-[270px] bg-m-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-m-surface-container-high/50 flex flex-col">
+<div class="relative h-44 w-full bg-slate-100">
+<img alt="Lobby y Sala de Espera en Ago Hotel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeJRTVGjvRdJ_6ciC-Uy1u1ZDndcsI1fakEVMCAhE0PWo7K6Z8j92mRsFhzOan6-VWyUG2q2RjFAesm--gwfV1NL7pyPyL6i49X2eyOy5VADZJsaFvIoHK6pO-ryWFUa-4S6-SQbVmesw9_0AKdfpRjJm2p1g6HUMOB_BPPgBdPhcyzdE0cFamkoEbNw0hCIQ3ZtQxB4piImlth1_-JnLJzwyuR1-zzIlSPbYLkuGdpETO9zjpzLtT7bY8rVIbDMPTeZ0">
+<span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-m-on-surface font-label-md px-2.5 py-1 rounded-full shadow-xs">
+            Recepción
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<span class="font-label-lg text-m-on-surface font-bold">Lobby &amp; Sala de Espera</span>
+<p class="font-body-sm text-m-on-surface-variant mt-1 text-[13px]">Salón de estar amueblado con sillones de piel, clima y atención cálida a tu llegada.</p>
+</div>
+</div>
+<!-- Item 4: Espacios de Estar -->
+<div class="snap-start shrink-0 w-[270px] bg-m-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-m-surface-container-high/50 flex flex-col">
+<div class="relative h-44 w-full bg-slate-100">
+<img alt="Espacios de Estar y Comodidad en Ago Hotel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4HKACqERo8guoGFtUYh12D2LLnl0Yl1-aMerzSuNSJ4s3f8c4PC_pBAWS-oli1de9_n1xyvYoHNYE8HxRJDAXR28RlnM4i4qHuzZqFop42QAOxFvswt4gyJjPNWxdgR_wFXIAM2PkgDHINjy6Wejf2eaqTh59jHoQOlhiG_y--ZYSkWiY8IsAFnd2jbro0ik_3okPPvIkF7u1k7kmbSlLMprQI21zRu91PNqWdSZJXZIVSAfKoBJ-OWheUrIUzpxYggI">
+<span class="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-sm text-m-on-surface font-label-md px-2.5 py-1 rounded-full shadow-xs">
+            Comodidades
+          </span>
+</div>
+<div class="p-3.5 flex flex-col justify-between flex-1">
+<span class="font-label-lg text-m-on-surface font-bold">Espacios de Estar</span>
+<p class="font-body-sm text-m-on-surface-variant mt-1 text-[13px]">Áreas tranquilas y equipadas para relajarte con total privacidad.</p>
+</div>
+</div>
+</div>
+<!-- Badge Próximamente Recorrido Virtual 3D -->
+<div class="px-margin-mobile mt-3">
+<div class="flex items-center justify-between p-3 rounded-xl bg-m-surface-container border border-m-surface-container-high text-m-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-[#0091da]/10 flex items-center justify-center text-[#0091da] shadow-xs">
+<span class="material-symbols-outlined text-[20px]">view_in_ar</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md font-bold">Recorrido Virtual 3D</span>
+<span class="font-body-sm text-[12px] text-m-on-surface-variant">Explora cada rincón desde tu pantalla</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#0091da]/15 text-[#0091da] font-eyebrow text-[10px] uppercase font-bold tracking-wider">
+          Próximamente
+        </span>
+</div>
+</div>
+</section>
+<!-- Reseñas Reales Google -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="flex items-center justify-between mb-3.5">
+<div>
+<span class="font-eyebrow text-m-eyebrow text-[#0091da] uppercase tracking-wider font-bold">Testimonios</span>
+<h2 class="font-headline-sm text-m-on-surface font-bold">Opiniones Reales</h2>
+</div>
+<div class="flex items-center gap-1 bg-white border border-m-surface-container-high px-2.5 py-1 rounded-full shadow-xs">
+<span class="text-[#E89234] font-bold text-[14px]">★</span>
+<span class="font-label-lg font-bold text-m-on-surface">5.0</span>
+<span class="font-label-sm text-m-on-surface-variant text-[11px]">Google</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Review 1 -->
+<div class="p-4 rounded-xl bg-m-surface-container-lowest shadow-sm border border-m-surface-container-high/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0091da]/15 text-[#0091da] flex items-center justify-center font-bold font-label-md">
+              M
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-m-on-surface font-bold">Huésped Verificado</span>
+<span class="font-label-sm text-[11px] text-m-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Reseña en Google</span>
+</div>
+</div>
+<div class="flex text-[#E89234] text-[14px] tracking-tight font-bold">
+            ★★★★★
+          </div>
+</div>
+<p class="font-body-sm text-m-on-surface-variant leading-relaxed italic text-[13px]">“Excelente servicio y hospitalidad, lo recomiendo ampliamente. Precio accesible, clima agradable y un lugar muy tranquilo.”</p>
+</div>
+<!-- Review 2 -->
+<div class="p-4 rounded-xl bg-m-surface-container-lowest shadow-sm border border-m-surface-container-high/40 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-[#0091da]/15 text-[#0091da] flex items-center justify-center font-bold font-label-md">
+              R
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-m-on-surface font-bold">Huésped Verificado</span>
+<span class="font-label-sm text-[11px] text-m-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Reseña en Google</span>
+</div>
+</div>
+<div class="flex text-[#E89234] text-[14px] tracking-tight font-bold">
+            ★★★★★
+          </div>
+</div>
+<p class="font-body-sm text-m-on-surface-variant leading-relaxed italic text-[13px]">“Mi estancia fue muy agradable, el servicio fue muy bueno.”</p>
+</div>
+</div>
+</section>
+<!-- Ubicación & Mapa -->
+<section class="px-margin-mobile mt-space-lg">
+<div class="mb-3">
+<span class="font-eyebrow text-m-eyebrow text-[#0091da] uppercase tracking-wider font-bold">Destino Sinaloa</span>
+<h2 class="font-headline-sm text-m-on-surface font-bold">Ubicación</h2>
+</div>
+<div class="rounded-2xl bg-m-surface-container-lowest overflow-hidden shadow-sm border border-m-surface-container-high/40 flex flex-col">
+<div class="w-full h-44 bg-cover bg-center relative" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRZ0FQiLrj1REsyAz0qgNhOstWRp7UDTQ5FYutqJiPcOnU6GIb5iVNOFLGkHM9i7bqyiiOegG7sB3hbOM4uw07vfLScNihzjU5aoPkiFy9ITS05cbeNsKyeYXUR7LlLoqH0jpAdcsXOglxgWrW0xV-Xx9SqQlReE8mTGzIJ4hE8FqkTL72TlKnBKoh23g8BHm8l1Abt9k3zUrzFJwySxeQbS3VdIk-MwxAQRiVD2Aft3EcwB-Vv-A_bQ')">
+<div class="absolute inset-0 bg-[#0091da]/10 pointer-events-none"></div>
+<div class="absolute bottom-3 right-3 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-xs flex items-center gap-1.5 text-m-on-surface border border-slate-100">
+<span class="material-symbols-outlined text-[#0091da] text-[16px]">pin_drop</span>
+<span class="font-label-md font-semibold">Aguaruto, Sin.</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#0091da] text-[22px] shrink-0 mt-0.5">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-m-on-surface font-bold">Adolfo López Mateos 33</span>
+<span class="font-body-sm text-m-on-surface-variant text-[13px]">Aguaruto, Culiacán, Sinaloa, México</span>
+</div>
+</div>
+<a class="w-full h-11 bg-m-surface-container hover:bg-m-surface-container-high text-m-on-surface rounded-lg flex items-center justify-center gap-2 font-label-lg transition-colors active:scale-[0.99] border border-m-surface-container-high" href="https://maps.google.com/?q=Adolfo+L%C3%B3pez+Mateos+33,+Aguaruto,+Culiac%C3%A1n" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-[#0091da]">directions</span>
+<span class="font-bold">Cómo llegar</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Contacto Directo Móvil & Confianza -->
+<section class="px-margin-mobile mt-space-lg mb-space-sm">
+<div class="bg-[#0091da]/5 border border-[#0091da]/15 rounded-2xl p-5 flex flex-col gap-4 text-center items-center">
+<div class="w-12 h-12 rounded-full bg-[#0091da]/10 flex items-center justify-center text-[#0091da]">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-m-on-surface font-bold">Atención Inmediata</h3>
+<p class="font-body-sm text-m-on-surface-variant max-w-xs mt-1 text-[13px]">
+          Resolvemos tus dudas sobre disponibilidad, llegada y servicios al instante.
+        </p>
+</div>
+<div class="w-full flex flex-col gap-2.5">
+<!-- Call Button -->
+<a class="w-full h-12 bg-[#0091da] text-white rounded-xl flex items-center justify-center gap-2 font-label-lg shadow-sm hover:brightness-105 active:scale-[0.98] transition-all font-bold" href="tel:6673599545">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span class="">Llamar al 667 359 9545</span>
+</a>
+<!-- Direct WhatsApp In-Page Card Option -->
+<a class="w-full h-12 bg-white text-[#128C7E] border border-emerald-200 rounded-xl flex items-center justify-center gap-2 font-label-lg shadow-xs hover:bg-emerald-50/50 active:scale-[0.98] transition-all font-bold" href="https://wa.me/526673599545">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="">Escribir por WhatsApp</span>
+</a>
+</div>
+<div class="flex items-center gap-4 text-m-on-surface-variant font-label-sm text-[12px] pt-1">
+<span class="flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[#0091da] text-[15px]">verified_user</span>
+          Reserva Segura
+        </span>
+<span class="flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[#0091da] text-[15px]">bolt</span>
+          Respuesta Rápida
+        </span>
+</div>
+</div>
+</section>
+</div><footer class="w-full bg-m-surface-container-low px-margin-mobile py-space-lg mt-space-xl flex flex-col gap-space-sm text-center items-center border-t border-m-surface-container-high"><span class="font-headline-sm text-[#0091da] font-extrabold tracking-tight">AGO HOTEL</span><p class="font-body-sm text-m-on-surface-variant max-w-xs text-[13px]">Hospitalidad cálida y descanso sublime en Sinaloa</p><div class="flex flex-col gap-1 items-center mt-space-xs text-m-on-surface"><a class="font-label-lg flex items-center gap-1.5 text-[#0091da] hover:underline font-bold" href="tel:6673599545"><span class="material-symbols-outlined text-[18px]">call</span> 667 359 9545</a><span class="font-body-sm text-m-on-surface-variant flex items-center gap-1.5 text-[13px]"><span class="material-symbols-outlined text-[18px] text-[#0091da]">location_on</span> Aguaruto, Culiacán, Sin.</span></div><p class="font-eyebrow text-[11px] text-m-outline mt-space-sm uppercase tracking-widest">© 2024 Ago Hotel. Todos los derechos reservados.</p></footer></main><div class="fixed bottom-20 inset-x-0 z-40 px-margin-mobile pointer-events-none flex justify-center"><a class="pointer-events-auto w-full max-w-sm h-[52px] bg-[#25D366] text-white rounded-xl shadow-[0_8px_24px_-4px_rgba(37,211,102,0.4)] flex items-center justify-center gap-2.5 font-label-lg font-bold hover:brightness-105 active:scale-[0.98] transition-all" href="https://wa.me/526673599545"><span class="material-symbols-outlined text-[22px]">chat</span><span class="">Reservar por WhatsApp</span></a></div><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-white/95 backdrop-blur-xl border-t border-m-surface-container-high shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-[#0091da] font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors text-[#0091da] font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">hotel</span><span class="font-label-md text-[11px]">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="habitaciones" href="#"><span class="material-symbols-outlined text-[22px]">bed</span><span class="font-label-md text-[11px]">Habitaciones</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">ac_unit</span><span class="font-label-md text-[11px]">Servicios</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="ubicacion" href="#"><span class="material-symbols-outlined text-[22px]">map</span><span class="font-label-md text-[11px]">Ubicación</span></a></div></nav>
+</div>
+</body>
+</html>
