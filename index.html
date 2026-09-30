@@ -298,6 +298,81 @@
     #mobile-view { display: none; }
   }
 </style>
+<style id="motion-styles">
+  html { scroll-behavior: smooth; }
+  #sobre-nosotros, #galeria, #resenas, #ubicacion { scroll-margin-top: 96px; }
+
+  #desktop-view header, #mobile-view header {
+    transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out;
+  }
+  .header-scrolled {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.18) !important;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hero-anim {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroFadeUp 0.7s ease-out forwards;
+  }
+  .hero-anim.delay-1 { animation-delay: 0.15s; }
+  .hero-anim.delay-2 { animation-delay: 0.3s; }
+  @keyframes heroFadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .star-unit {
+    display: inline-block;
+    opacity: 0.2;
+    transition: opacity 0.35s ease-out;
+  }
+  .star-unit.lit { opacity: 1; }
+
+  .icon-spin {
+    display: inline-block;
+    animation: iconSpin 9s linear infinite;
+  }
+  @keyframes iconSpin {
+    to { transform: rotate(360deg); }
+  }
+
+  .whatsapp-cta-primary {
+    animation: waPulse 4s ease-in-out infinite;
+  }
+  .whatsapp-cta-primary:hover,
+  .whatsapp-cta-primary:focus-visible {
+    animation-play-state: paused;
+    box-shadow: 0 14px 28px -6px rgba(37, 211, 102, 0.5);
+  }
+  @keyframes waPulse {
+    0%, 88%, 100% { transform: scale(1); }
+    94% { transform: scale(1.06); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+    .reveal, .hero-anim {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .star-unit { opacity: 1 !important; }
+  }
+</style>
 </head>
 <body>
 <div id="desktop-view" class="bg-surface font-body-md text-body-md text-on-surface antialiased">
@@ -919,5 +994,187 @@
 </section>
 </div><footer class="w-full bg-m-surface-container-low px-margin-mobile py-space-lg mt-space-xl flex flex-col gap-space-sm text-center items-center border-t border-m-surface-container-high"><span class="font-headline-sm text-[#0091da] font-extrabold tracking-tight">AGO HOTEL</span><p class="font-body-sm text-m-on-surface-variant max-w-xs text-[13px]">Hospitalidad cálida y descanso sublime en Sinaloa</p><div class="flex flex-col gap-1 items-center mt-space-xs text-m-on-surface"><a class="font-label-lg flex items-center gap-1.5 text-[#0091da] hover:underline font-bold" href="tel:6673599545"><span class="material-symbols-outlined text-[18px]">call</span> 667 359 9545</a><span class="font-body-sm text-m-on-surface-variant flex items-center gap-1.5 text-[13px]"><span class="material-symbols-outlined text-[18px] text-[#0091da]">location_on</span> Aguaruto, Culiacán, Sin.</span></div><p class="font-eyebrow text-[11px] text-m-outline mt-space-sm uppercase tracking-widest">© 2026 Ago Hotel. Todos los derechos reservados.</p></footer></main><div class="fixed bottom-20 inset-x-0 z-40 px-margin-mobile pointer-events-none flex justify-center"><a class="pointer-events-auto w-full max-w-sm h-[52px] bg-[#25D366] text-white rounded-xl shadow-[0_8px_24px_-4px_rgba(37,211,102,0.4)] flex items-center justify-center gap-2.5 font-label-lg font-bold hover:brightness-105 active:scale-[0.98] transition-all" href="https://wa.me/526673599545"><span class="material-symbols-outlined text-[22px]">chat</span><span class="">Reservar por WhatsApp</span></a></div><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-white/95 backdrop-blur-xl border-t border-m-surface-container-high shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-[#0091da] font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors text-[#0091da] font-bold" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">hotel</span><span class="font-label-md text-[11px]">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="habitaciones" href="#"><span class="material-symbols-outlined text-[22px]">bed</span><span class="font-label-md text-[11px]">Habitaciones</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="servicios" href="#"><span class="material-symbols-outlined text-[22px]">ac_unit</span><span class="font-label-md text-[11px]">Servicios</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-m-on-surface-variant hover:text-m-on-surface transition-colors" data-path="ubicacion" href="#"><span class="material-symbols-outlined text-[22px]">map</span><span class="font-label-md text-[11px]">Ubicación</span></a></div></nav>
 </div>
+<script>
+(function () {
+  'use strict';
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var desktopView = document.getElementById('desktop-view');
+  var mobileView = document.getElementById('mobile-view');
+
+  function qs(root, sel) { return root ? root.querySelector(sel) : null; }
+  function qsa(root, sel) { return root ? Array.prototype.slice.call(root.querySelectorAll(sel)) : []; }
+  function findSectionByHeading(view, text) {
+    var headings = qsa(view, 'h2, h3');
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].textContent.trim() === text) return headings[i].closest('section');
+    }
+    return null;
+  }
+
+  /* 1. Entrada del hero: titulo, subtitulo y boton de WhatsApp */
+  function setupHero(view) {
+    var hero = qs(view, 'main section');
+    if (!hero) return;
+    var title = hero.querySelector('h1');
+    var subtitle = hero.querySelector('p');
+    var waBtn = hero.querySelector('a[href*="wa.me"]');
+    if (title) title.classList.add('hero-anim');
+    if (subtitle) subtitle.classList.add('hero-anim', 'delay-1');
+    if (waBtn) waBtn.classList.add('hero-anim', 'delay-2');
+  }
+  setupHero(desktopView);
+  setupHero(mobileView);
+
+  /* Boton flotante de WhatsApp en movil: se anima como 3er elemento del hero
+     y recibe el pulso (no existe un CTA de WhatsApp dentro del hero movil) */
+  var mobileFloatingWa = qs(mobileView, '.fixed.bottom-20 a[href*="wa.me"]');
+  if (mobileFloatingWa) mobileFloatingWa.classList.add('hero-anim', 'delay-2');
+
+  /* 5. Pulso del boton "Reservar por WhatsApp" + elevacion al hover */
+  var desktopHeroWa = qs(desktopView, 'main section a[href*="wa.me"]');
+  if (desktopHeroWa) desktopHeroWa.classList.add('whatsapp-cta-primary');
+  if (mobileFloatingWa) mobileFloatingWa.classList.add('whatsapp-cta-primary');
+
+  /* 7. Rotacion lenta del icono de la tarjeta "Recorrido Virtual 3D" */
+  function spinIconByGlyph(view, glyph) {
+    qsa(view, 'span.material-symbols-outlined').forEach(function (span) {
+      if (span.textContent.trim() === glyph) span.classList.add('icon-spin');
+    });
+  }
+  spinIconByGlyph(desktopView, '3d_rotation');
+  spinIconByGlyph(mobileView, 'view_in_ar');
+
+  /* 8. Header translucido + sombra al hacer scroll */
+  var headers = [qs(desktopView, 'header'), qs(mobileView, 'header')].filter(Boolean);
+  var headerFrameQueued = false;
+  function updateHeaders() {
+    var scrolled = window.scrollY > 8;
+    headers.forEach(function (h) { h.classList.toggle('header-scrolled', scrolled); });
+  }
+  function queueHeaderUpdate() {
+    if (headerFrameQueued) return;
+    headerFrameQueued = true;
+    (window.requestAnimationFrame || window.setTimeout)(function () {
+      headerFrameQueued = false;
+      updateHeaders();
+    });
+  }
+  window.addEventListener('scroll', queueHeaderUpdate, { passive: true });
+  updateHeaders();
+
+  /* 2. Parallax sutil en la imagen del hero de escritorio (desactivado <768px) */
+  var desktopHeroBg = qs(desktopView, 'main section > div[style*="background-image"]');
+  if (desktopHeroBg && !reduceMotion) {
+    var parallaxFrameQueued = false;
+    function updateParallax() {
+      if (window.innerWidth < 768) {
+        desktopHeroBg.style.backgroundPosition = '';
+        return;
+      }
+      var offset = Math.min(window.scrollY * 0.25, 160);
+      desktopHeroBg.style.backgroundPosition = 'center calc(50% + ' + offset + 'px)';
+    }
+    function queueParallaxUpdate() {
+      if (parallaxFrameQueued) return;
+      parallaxFrameQueued = true;
+      (window.requestAnimationFrame || window.setTimeout)(function () {
+        parallaxFrameQueued = false;
+        updateParallax();
+      });
+    }
+    window.addEventListener('scroll', queueParallaxUpdate, { passive: true });
+    window.addEventListener('resize', queueParallaxUpdate, { passive: true });
+    updateParallax();
+  }
+
+  /* 3. Revelado al hacer scroll: secciones, tarjetas de galeria y resenas */
+  var revealTargets = [];
+  function collectReveal(view) {
+    if (!view) return;
+    var sections = qsa(view, 'main > div > section').slice(1);
+    var galleryCards = qsa(view, '#galeria article');
+    var mobileGalleryTrack = qs(view, '.snap-x.snap-mandatory');
+    var mobileGalleryCards = mobileGalleryTrack ? Array.prototype.slice.call(mobileGalleryTrack.children) : [];
+    var reviewGrid = qs(view, '#resenas .grid.max-w-4xl');
+    var deskReviewCards = reviewGrid ? Array.prototype.slice.call(reviewGrid.children) : [];
+    revealTargets = revealTargets.concat(sections, galleryCards, mobileGalleryCards, deskReviewCards);
+
+    var reviewsSection = findSectionByHeading(view, 'Opiniones Reales');
+    if (reviewsSection) {
+      var reviewList = qs(reviewsSection, '.flex.flex-col.gap-3');
+      if (reviewList) revealTargets = revealTargets.concat(Array.prototype.slice.call(reviewList.children));
+    }
+  }
+  collectReveal(desktopView);
+  collectReveal(mobileView);
+
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function (el) {
+      el.classList.add('reveal');
+      revealObserver.observe(el);
+    });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('reveal', 'is-visible'); });
+  }
+
+  /* 6. Estrellas de calificacion: se iluminan una por una al entrar en pantalla */
+  function buildStarUnits(container) {
+    var spanChildren = Array.prototype.filter.call(container.children, function (c) {
+      return c.tagName === 'SPAN';
+    });
+    if (spanChildren.length === 5) {
+      spanChildren.forEach(function (s) { s.classList.add('star-unit'); });
+      return spanChildren;
+    }
+    if (container.children.length === 0 && container.textContent.trim() === '★★★★★') {
+      container.innerHTML = '';
+      var units = [];
+      for (var i = 0; i < 5; i++) {
+        var span = document.createElement('span');
+        span.className = 'star-unit';
+        span.textContent = '★';
+        container.appendChild(span);
+        units.push(span);
+      }
+      return units;
+    }
+    return [];
+  }
+  function setupStars(container) {
+    var units = buildStarUnits(container);
+    if (!units.length) return;
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      units.forEach(function (u) { u.classList.add('lit'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries, o) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          units.forEach(function (unit, i) {
+            setTimeout(function () { unit.classList.add('lit'); }, i * 120);
+          });
+          o.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    obs.observe(container);
+  }
+  qsa(desktopView, '#resenas .text-amber-400').forEach(setupStars);
+  var mobileReviewsSection = findSectionByHeading(mobileView, 'Opiniones Reales');
+  if (mobileReviewsSection) {
+    qsa(mobileReviewsSection, 'div').forEach(function (div) {
+      if (div.children.length === 0 && div.textContent.trim() === '★★★★★') setupStars(div);
+    });
+  }
+})();
+</script>
 </body>
 </html>
